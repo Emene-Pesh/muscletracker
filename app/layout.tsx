@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
+import LineGraph from "./components/stats/graph/graph";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         {children}
+        <LineGraph xAxis={[1, 2, 3, 5, 8, 10] } series={[2, 5.5, 2, 8.5, 1.5, 5]} width={500} height={500}></LineGraph>
       </body>
     </html>
   );
