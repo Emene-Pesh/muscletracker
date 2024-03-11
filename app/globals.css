@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.labelled-Input-name {
+  font-size: 7px;
+}

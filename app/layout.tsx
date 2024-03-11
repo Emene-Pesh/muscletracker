@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import LineGraph from "./components/stats/graph/graph";
+import SetInput from "./components/inputs/setInput";
+import LabeledInput from "./components/inputs/labeledInput";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +22,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         {children}
+        {/* <LabeledInput name="Reps" type="number" defaultValue={0} /> */}
+        <SetInput repAmount={0} weight={0} rpe={0}/>
         <LineGraph xAxis={[1, 2, 3, 5, 8, 10] } series={[2, 5.5, 2, 8.5, 1.5, 5]} width={500} height={500}></LineGraph>
       </body>
     </html>
