@@ -32,6 +32,12 @@ body {
   }
 }
 
-.labelled-Input-name {
-  font-size: 7px;
+
+
+li {
+  float: left;
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
 }
+
