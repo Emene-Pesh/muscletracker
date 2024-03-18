@@ -6,7 +6,7 @@ interface LogoProps {}
 export default function Logo(props: LogoProps) {
   return (
     <div>
-      <Image src="/images/fd3.png" alt="logo" width={100} height={100} />
+      <Image src="/images/fd3.png" alt="logo" width={40} height={40} />
     </div>
   );
 }
